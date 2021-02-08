@@ -1,7 +1,8 @@
 import { request } from './index';
 
 const login = function(username, password) {
-  request({
+  return Promise.resolve();
+  return request({
     method: 'post',
     url: '/login',
     data: {

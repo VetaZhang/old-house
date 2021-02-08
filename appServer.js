@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
   res.render('static', { js: '/bundle.js' });
 });
 
-const port = 8000;
+const port = 8080;
 app.listen(port, () => {
   console.log(`Your app is running on port ${port}`);
 });
