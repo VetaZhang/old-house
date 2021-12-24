@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { hot } from "react-hot-loader/root";
 import Input from 'components/input';
 import Button from 'components/button';
 import userApi from 'api/user';
@@ -26,4 +25,4 @@ function login() {
   </div>;
 }
 
-export default hot(login);
+export default login;

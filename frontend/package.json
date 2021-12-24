@@ -1,0 +1,48 @@
+{
+  "name": "attic-frontend",
+  "version": "0.0.1",
+  "description": "Attic",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development webpack-dev-server --config ./webpack/dev.js",
+    "clean": "rm -rf ./frontend/dist"
+  },
+  "keywords": [
+    "Attic"
+  ],
+  "author": "Veta",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^4.17.4",
+    "axios": "^0.20.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.16.5",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "react-refresh": "^0.11.0",
+    "style-loader": "^3.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-middleware": "^5.2.2",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-merge": "^4.2.2"
+  }
+}

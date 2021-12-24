@@ -1,9 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { hot } from "react-hot-loader/root";
 import styles from './app.less';
 
-const login = lazy(() => import(/* webpackChunkName: 'login' */ './pages/login'));
+const login = lazy(() => import(/* webpackChunkName: 'login' */ './pages/Login'));
 
 class App extends React.Component {
   constructor(props) {
@@ -20,4 +19,4 @@ class App extends React.Component {
   }
 }
 
-export default hot(App);
+export default App;
