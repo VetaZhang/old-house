@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #2d91ee;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.9;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 1;
+  }
+  &.loading {
+    opacity: 0.65;
+    pointer-events: none;
+  }
+}

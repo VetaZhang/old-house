@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './style.less';
 
-function button({ type, onClick, children }) {
+function button({ loading, onClick, children }) {
   return <div
-    className={styles.button}
+    className={`${styles.button} ${loading ? styles.loading : ''}`}
     onClick={onClick}
   >
     {children}

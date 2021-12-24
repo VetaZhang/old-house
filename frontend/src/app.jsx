@@ -5,17 +5,18 @@ import styles from './app.less';
 const login = lazy(() => import(/* webpackChunkName: 'login' */ './pages/Login'));
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
-    return (<Suspense fallback={null}>
-      <div className={styles.app}>
+    return (<BrowserRouter>
+      <Suspense fallback={null}>
         <Switch>
-          <Route path="/login" component={login} />
+          {
+            routerList.map(({ path, component }) => {
+              return <Route key={path} path={path} component={component} />;
+            })
+          }
         </Switch>
-      </div>
-    </Suspense>);
+      </Suspense>
+    </BrowserRouter>);
   }
 }
 
