@@ -2,10 +2,10 @@ const file = require('../controllers/file');
 
 module.exports = [
   {
-    method: 'get',
+    method: 'post',
     path: '/file/upload',
     auth: 'true',
-    cors: true,
+    cors: false,
     handler: file.upload
   }
 ];
