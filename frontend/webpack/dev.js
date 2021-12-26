@@ -3,7 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 const merger = require('webpack-merge');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
-const HTMLPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const commonWebpackConfig = require('./common');
 
 // 不显示 DeprecationWarning
@@ -63,16 +63,12 @@ const devWebpackConfig = {
   plugins: [
     new ReactRefreshWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new ReactRefreshWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: path.resolve(__dirname, '../src/index.html'),
+      inject: 'body'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    }),
-    new HTMLPlugin({
-      template: path.resolve(__dirname, '../src/index.html'),
-      inject: 'body'
     })
   ],
 };

@@ -7,7 +7,7 @@ const routerList = [
   },
   {
     path: '/home',
-    component: lazy(() => import(/* webpackChunkName: 'login' */ './page/Home')),
+    component: lazy(() => import(/* webpackChunkName: 'home' */ './page/Home')),
   },
 ];
 

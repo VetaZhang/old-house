@@ -8,7 +8,6 @@ module.exports = {
       'node_modules',
     ],
     alias: {
-      // 'react-dom': '@hot-loader/react-dom',
       '@src': path.resolve('./src'),
       '@page': path.resolve('./src/page'),
       '@container': path.resolve('./src/container'),
