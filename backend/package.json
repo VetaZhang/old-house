@@ -4,8 +4,8 @@
   "description": "Attic backend",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon NODE_ENV=development server.js",
+    "clean": "rm -rf ./public/*"
   },
   "keywords": [
     "Attic",
@@ -17,6 +17,7 @@
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
     "koa-router": "^10.1.1",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.1.4"
   }
 }

@@ -1,10 +1,9 @@
 import { request } from './index';
 
 const login = function(username, password) {
-  return Promise.resolve();
   return request({
     method: 'post',
-    url: '/login',
+    url: '/user/register?qwe=asd',
     data: {
       username,
       password,

@@ -4,6 +4,9 @@ import styles from './style.less';
 
 const routerList = [
   {
+    name: 'Attic',
+    path: '/home'
+  },{
     name: '我的仓库',
     path: '/home'
   },

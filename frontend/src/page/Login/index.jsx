@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { hot } from "react-hot-loader/root";
 import Input from '@component/Input';
 import Password from '@component/Password';
 import Button from '@component/Button';
@@ -19,7 +18,7 @@ function Login() {
     console.log(useranme, password);
     userApi.login(useranme, password).then(res => {
       setLoading(false);
-      history.push('/home');
+      // history.push('/home');
     }).catch(error => {
       setLoading(false);
       setErrorMsg(error);

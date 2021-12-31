@@ -16,7 +16,7 @@ const devWebpackConfig = {
   // stats: 'errors-only',
   devServer: {
     historyApiFallback: true,
-    open: true,
+    // open: true,
     port: 8000,
     // disableHostCheck: true,
   },
